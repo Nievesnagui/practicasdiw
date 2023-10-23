@@ -1,0 +1,147 @@
+/*Nieves Navas Aguilar 2º DAW*/
+body {
+    margin: 50px;
+    font-family: 'IM Fell DW Pica', cursive;
+    background-color: rgba(179, 206, 206, 0.253);
+    display: grid;
+}
+
+.nav-container {
+    grid-row: 1/7;
+    border-bottom: solid 1px rgba(112, 105, 105, 0.315);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.nav-title {
+    font-size: 30px;
+    color: rgb(130, 148, 167);
+    grid-column: 1/2;
+}
+
+.nav-item {
+    margin: 10px;
+    padding: 15px;
+    grid-column: span 1;
+    display: grid;
+}
+
+.nav-item-text {
+    color: rgb(112, 105, 105);
+    text-decoration: none;
+    font-size: 25px;
+    transition: background-color 0.3s;
+}
+
+.nav-item-text:hover {
+    color: rgba(130, 148, 167, 0.507);
+}
+
+.title {
+    margin: 10px;
+    padding: 15px;
+}
+
+.main-container {
+    margin-top: 15px;
+    display: grid;
+}
+
+.main-content {
+    width: 80vw;
+    margin: 4px;
+grid-column: 4/7;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+img {
+    width: 250px;
+    height: 180px;
+}
+
+.main-item {
+    border: solid 1px rgba(112, 105, 105, 0.315);
+    padding: auto;
+    width: 250px;
+    height: 250px;
+    margin: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-item:hover {
+    background-color: rgb(140, 160, 180);
+    img {
+        filter: blur(1px);
+    }
+    .main-text{
+        color: azure;
+    }
+    .main-subtitle {
+        color: azure;
+    }
+}
+
+
+.main-text {
+    font-size: 20px;
+
+}
+
+.main-title {
+    margin: 4px;
+}
+
+.main-subtitle {
+    margin: 4px;
+    color: rgb(127, 138, 148);
+}
+
+.main-side {
+    margin-top: 15px;
+    font-size: 25px;
+grid-column: 1/3;
+margin-right: 5vw;
+
+}
+
+.main-side-title {
+    border-bottom: solid 1px rgba(112, 105, 105, 0.315);
+    color: rgb(75, 76, 78);
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-side-button {
+    background-color: rgba(204, 210, 216, 0.37);
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    min-width: 145px;
+}
+
+.main-side-button:hover {
+    background-color: rgba(156, 193, 229, 0.37);
+}
+
+.main-side-button-title {
+    text-decoration: none;
+    color: rgb(75, 76, 78);
+    font-size: 18px;
+    transition: background-color 0.3s;
+    font-size: 23px;
+
+}
+
+.main-side-button-title:hover {
+    color: rgba(130, 148, 167, 0.507);
+}
+
+.footer {
+    color: rgba(75, 76, 78, 0.644);
+    font-size: 35px;
+    padding-top: 30px;
+}

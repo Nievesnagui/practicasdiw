@@ -1,0 +1,160 @@
+$colorGrisChulo: rgba(179, 206, 206, 0.253);
+$colorGrisOscurillo: rgba(112, 105, 105, 0.315);
+$colorAzulGrisaceo: rgb(130, 148, 167);
+$colorAzulGrisaceoOscuro: rgba(130, 148, 167, 0.507);
+$fuente: 'IM Fell DW Pica', cursive;
+
+body {
+    font-family: $fuente;
+    background-color: $colorGrisChulo;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 1px $colorGrisOscurillo;
+
+    .nav-content {
+        display: inline-flex;
+        justify-content: space-evenly;
+
+        div {
+            margin: 10px;
+            padding: 15px;
+
+            a {
+                color: rgb(112, 105, 105);
+                text-decoration: none;
+                font-size: 25px;
+                transition: background-color 0.3s;
+            }
+
+            a:hover {
+                color: $colorAzulGrisaceoOscuro;
+            }
+
+        }
+    }
+
+    .nav-title {
+        flex-grow: 5;
+        font-size: 30px;
+        color: $colorAzulGrisaceo;
+
+        h1 {
+            margin: 10px;
+            padding: 15px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15px;
+
+    aside {
+        flex-grow: 1;
+        justify-content: center;
+        margin-top: 15px;
+        font-size: 25px;
+        .main-side-title {
+            border-bottom: solid 1px $colorGrisOscurillo;
+            color: rgb(75, 76, 78);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .main-side-button {
+            background-color: rgba(204, 210, 216, 0.37);
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            a {
+                text-decoration: none;
+                color: rgb(75, 76, 78);
+                font-size: 18px;
+                transition: background-color 0.3s;
+                font-size: 23px;
+            }
+            
+        }
+        .main-side-button:hover {
+            background-color: rgba(156, 193, 229, 0.37);
+            a:hover {
+                color: $colorAzulGrisaceoOscuro;
+            }
+        }
+    }
+.main-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 10;
+    flex-flow: row wrap;
+    width: 900px;
+    flex-basis: calc(25% - 8px);
+    margin: 4px;
+}
+
+img {
+    width: 250px;
+    height: 180px;
+}
+
+.main-item {
+    border: solid 1px $colorGrisOscurillo;
+    padding: auto;
+    margin: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-item:hover {
+    background-color: rgb(140, 160, 180);
+
+    img {
+        filter: blur(1px);
+    }
+
+    p{
+        color: azure;
+    }
+}
+
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+
+}
+
+.main-title {
+    margin: 4px;
+}
+
+.main-subtitle {
+    margin: 4px;
+    color: rgb(127, 138, 148);
+}
+
+
+
+}
+
+
+.footer {
+    color: rgba(75, 76, 78, 0.644);
+    font-size: 35px;
+    padding-top: 30px;
+}
