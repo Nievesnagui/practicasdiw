@@ -1,0 +1,130 @@
+//Nieves Navas Aguilar 2º DAW
+@use 'color-normal';                                                        
+
+body {
+    font-family: 'IM Fell DW Pica', cursive;                            //Estilo de letra general
+}
+
+@mixin decoraImg() {
+    width:                                          250px;             //Función del alto y ancho fijo de las imágenes
+    height:                                         180px;
+}
+
+@mixin funcionPaddingyMargin($padd, $marg){
+padding:                                            $padd;             //Función para gestionar margin y paddings
+margin:                                             $marg;
+}
+
+.nav-container {                                                      
+    display:                                        flex;
+    justify-content:                                space-evenly;
+}
+
+.nav-content {
+    display:                                        inline-flex;
+    justify-content:                                space-evenly;
+}
+
+.nav-title {
+    flex-grow:                                      5;
+    font-size:                                      30px;
+}
+
+.nav-item {
+    @include funcionPaddingyMargin(10px, 15px);                     //Uso de función de margin y padding 
+}
+
+.nav-item-text {
+    text-decoration:                                none;
+    font-size:                                      25px;
+    transition:                                     background-color 0.3s;
+}
+
+
+.title {
+    @include funcionPaddingyMargin(10px, 15px);                     //Uso de función de margin y padding 
+}
+
+.main-container {
+    display:                                        flex;
+    justify-content:                                space-evenly;
+    flex-wrap:                                      wrap;
+    margin-top:                                     15px;
+}
+
+.main-content {
+    display:                                        flex;
+    justify-content:                                space-evenly;
+    flex-grow:                                      10;
+    flex-flow:                                      row wrap;
+    width:                                          900px;
+    flex-basis:                                     calc(25% - 8px);
+    margin:                                         4px;
+}
+
+img {
+    @include decoraImg();                                           //Uso de función de imágenes
+}
+
+.main-item {
+    @include funcionPaddingyMargin(auto, 4px);                     //Uso de función de margin y padding 
+    transition:                                     background-color 0.3s;
+}
+
+.main-item:hover {
+
+    img {
+        filter:                                     blur(1px);
+    }
+
+}
+
+
+.main-text {
+    display:                                        flex;
+    flex-direction:                                 column;
+    justify-content:                                flex-start;
+    font-size:                                      20px;
+}
+
+.main-title {
+    margin:                                         4px;
+}
+
+.main-subtitle {
+    margin:                                         4px;
+}
+
+.main-side {
+    flex-grow:                                      1;
+    justify-content:                                center;
+    margin-top:                                     15px;
+    font-size:                                      25px;
+
+}
+
+.main-side-title {
+    text-align:                                     center;
+    font-weight:                                    bold;
+}
+
+.main-side-button {
+    padding:                                        15px;
+    text-align:                                     center;
+    margin-top:                                     20px;
+    transition:                                     background-color 0.3s;
+}
+
+.main-side-button-title {
+    text-decoration:                                none;
+    font-size:                                      18px;
+    transition:                                     background-color 0.3s;
+    font-size:                                      23px;
+
+
+}
+
+.footer {
+    font-size:                                      35px;
+    padding-top:                                    30px;
+}

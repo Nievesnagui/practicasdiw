@@ -1,0 +1,76 @@
+//Nieves Navas Aguilar 2º DAW
+$colorFondoBody:                                  black;                        //Aquí declaro todas las variables de los colores
+$colorBasico:                                     yellow;
+$colorAzulGrisaceo:                               yellow;
+$colorAzulGrisaceoOscuro:                         white;
+$colorNavItemText:                                yellow;
+$colorMainItemHoverFondo: rgba(255, 255, 0, 0.068);
+$colorMainItemTexto:                              yellow;
+$colorMainSubtitulo:                              yellow;
+
+body {
+    background-color:                               $colorFondoBody;                //Color de fondo del body
+}
+
+.nav-container {    
+    border-bottom:                                  $colorBasico;                   //Color de borde del nav container
+}
+
+.nav-title {
+    color:                                          $colorAzulGrisaceo;             //Color general del nav title
+}
+
+.nav-item-text {
+    color:                                          $colorNavItemText;              //Color general del nav item text
+}
+
+.nav-item-text:hover {
+    color:                                          $colorAzulGrisaceoOscuro;       //Color general del nav item cuando se pasa el cursor por encima
+}
+
+.main-item {
+    border:                                         solid 1px $colorBasico;         //Borde del main item
+}
+
+.main-item:hover {
+    background-color:                               $colorMainItemHoverFondo;       //Color de fondo del main item y color de los 
+                                                                                    //textos al pasar por encima
+    .main-text {
+        color:                                      $colorMainItemTexto;
+    }
+
+    .main-subtitle {
+        color:                                      $colorMainItemTexto;
+    }
+}
+
+.main-subtitle {
+    color:                                          $colorMainSubtitulo;            //Color general del subtítulo
+}
+
+
+.main-side-title {
+    border-bottom:                                  solid 1px $colorBasico;         //Color de borde y general del titulo del side
+    color:                                         yellow;
+}
+
+.main-side-button {
+    background-color:                              white;                         //Color de fondo de los botones del side
+}
+
+
+.main-side-button:hover {
+    background-color:                              rgba(255, 255, 0, 0.349);      //Color de fondo de los botones del side al pasar sobre ellos
+}
+
+.main-side-button-title {
+    color:                                         black;                         //Color general de los botones normal y al pasar sobre ellos
+
+    &:hover {
+        color:                                      white;
+    }
+}
+
+.footer {
+    color:                                         yellow;                        //Color general del footer
+}

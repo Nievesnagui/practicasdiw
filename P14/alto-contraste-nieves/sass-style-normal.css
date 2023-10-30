@@ -1,0 +1,179 @@
+body {
+  background-color: rgba(179, 206, 206, 0.253);
+}
+
+.nav-container {
+  border-bottom: rgba(112, 105, 105, 0.315);
+}
+
+.nav-title {
+  color: rgb(130, 148, 167);
+}
+
+.nav-item-text {
+  color: rgb(112, 105, 105);
+}
+
+.nav-item-text:hover {
+  color: rgba(130, 148, 167, 0.507);
+}
+
+.main-item {
+  border: solid 1px rgba(112, 105, 105, 0.315);
+}
+
+.main-item:hover {
+  background-color: rgb(140, 160, 180);
+}
+
+.main-item:hover .main-text {
+  color: azure;
+}
+
+.main-item:hover .main-subtitle {
+  color: azure;
+}
+
+.main-subtitle {
+  color: rgb(127, 138, 148);
+}
+
+.main-side-title {
+  border-bottom: solid 1px rgba(112, 105, 105, 0.315);
+  color: rgb(75, 76, 78);
+}
+
+.main-side-button {
+  background-color: rgba(204, 210, 216, 0.37);
+}
+
+.main-side-button:hover {
+  background-color: rgba(156, 193, 229, 0.37);
+}
+
+.main-side-button-title {
+  color: rgb(75, 76, 78);
+}
+
+.main-side-button-title:hover {
+  color: rgba(130, 148, 167, 0.507);
+}
+
+.footer {
+  color: rgba(75, 76, 78, 0.644);
+}
+
+body {
+  font-family: "IM Fell DW Pica", cursive;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-content {
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+.nav-title {
+  flex-grow: 5;
+  font-size: 30px;
+}
+
+.nav-item {
+  padding: 10px;
+  margin: 15px;
+}
+
+.nav-item-text {
+  text-decoration: none;
+  font-size: 25px;
+  transition: background-color 0.3s;
+}
+
+.title {
+  padding: 10px;
+  margin: 15px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 10;
+  flex-flow: row wrap;
+  width: 900px;
+  flex-basis: calc(25% - 8px);
+  margin: 4px;
+}
+
+img {
+  width: 250px;
+  height: 180px;
+}
+
+.main-item {
+  padding: auto;
+  margin: 4px;
+  transition: background-color 0.3s;
+}
+
+.main-item:hover img {
+  filter: blur(1px);
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.main-title {
+  margin: 4px;
+}
+
+.main-subtitle {
+  margin: 4px;
+}
+
+.main-side {
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.main-side-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-side-button {
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.main-side-button-title {
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  font-size: 23px;
+}
+
+.footer {
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+/*# sourceMappingURL=sass-style-normal.css.map */
