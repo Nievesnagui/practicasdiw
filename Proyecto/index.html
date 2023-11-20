@@ -5,38 +5,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1er Trimestre Diseño</title>
+    <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
+    <title>Chachi Jueguis</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.google.com/specimen/IM+Fell+DW+Pica?query=im+fell+dw" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:wght@400;700&display=swap">
     <script src="script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
 
 <body>
     <!-- Menú Navbar -->
     <nav class="navbar is-primary has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
-
+                <!--Logo-->
                 <img src="./imgs/logo2.png" style="max-height: 100px;" alt="Logo">
                 <h1 class="title has-text-white">Chachi Jueguis</h1>
             </a>
-
+            <!--Menú hamburguesa-->
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                 <span class="is-warning" aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span class="is-warning" aria-hidden="true"></span>
             </a>
         </div>
-
+        <!--Items del menú hamburguesa-->
         <div id="navbarMenu" class="navbar-menu has-background-primary navbar-end has-shadow">
             <nav class="navbar is-primary" role="navigation" aria-label="dropdown navigation">
+                <!--Son hoverable, al pasar por encima aparecen sus propios items-->
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         Juegos
                     </a>
-
                     <div class="navbar-dropdown">
                         <a class="navbar-item">
                             Nintendo
@@ -120,7 +120,9 @@
             </nav>
         </div>
     </nav>
+    <!--Fin del menú hamburguesa-->
 
+    <!--Containers con información usando column en su propio section-->
     <section class="section my-2">
         <div class="container ">
             <div class="columns ">
@@ -136,10 +138,13 @@
             </div>
         </div>
     </section>
+    <!--Fin de containers-->
 
-
-    <section class="section my-2">
+    <!--Inicio del container principal-->
+    <!--La distribución cambia según el tamaño de la pantalla-->
+    <section class="section my-2  is-4-desktop is-8-tablet is-12-mobile">
         <div class="container">
+            <!--Buscador-->
             <div class="columns is-9">
                 <div class="column mx-3">
                     <div class="field has-addons">
@@ -153,24 +158,32 @@
                         </p>
                     </div>
                     <!--Inicio cards-->
+                    <!--Todas tienen el patrón descrito en la siguiente-->
                     <div class="columns is-multiline is-vcentered my-2 is-4-desktop is-8-tablet is-12-mobile">
                         <div class="column  is-4 has-text-centered ">
                             <div class="card p-2">
+                                <!--Imagen (sólo esta tiene enlace)-->
                                 <div class="card-image">
-                                    <figure class="image is-4by6">
-                                        <img src="./imgs/ac.jpg" alt="Animal Crossing: New Horizons">
-                                    </figure>
+                                    <a href="juego.html">
+                                        <figure class="image is-4by6">
+                                            <img src="./imgs/ac.jpg" alt="Animal Crossing: New Horizons">
+                                        </figure>
+                                    </a>
                                 </div>
+                                <!--Contenido-->
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
+                                            <!--Título-->
                                             <p class="title is-4">
-                                                Animal Crossing: New Horizons <a href=""><span
-                                                        class="icon has-text-info">
+                                                Animal Crossing: New Horizons <a href="juego.html">
+                                                    <!--Icono (sólo este tiene enlace)-->
+                                                    <span class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a>
                                             </p>
-                                            <div class="content">
+                                            <!--Precios-->
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -198,7 +211,7 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!--Botones de venta-compra-->
                                     <div class="content">
                                         <button class="button has-background-grey-dark">Vender</button>
                                         <button class="button has-background-grey-light">Comprar</button>
@@ -206,6 +219,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Fin de la primera card-->
                         <div class="column  is-4 has-text-centered">
                             <div class="card p-2">
                                 <div class="card-image">
@@ -221,7 +235,7 @@
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a>
                                             </p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -273,7 +287,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -321,7 +335,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -370,7 +384,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -419,7 +433,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -468,7 +482,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -517,7 +531,7 @@
                                                         class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -553,8 +567,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="column  is-4 has-text-centered">
                             <div class="card p-2">
                                 <div class="card-image">
@@ -563,10 +575,11 @@
                                 <div class="card-content">
                                     <div class="media">
                                         <div class="media-content">
-                                            <p class="title is-4">Pokemon Escudo<a href=""><span class="icon has-text-info">
+                                            <p class="title is-4">Pokemon Escudo<a href=""><span
+                                                        class="icon has-text-info">
                                                         <i class="fas fa-info-circle"></i>
                                                     </span></a></p>
-                                            <div class="content">
+                                            <div class="content has-text-grey">
                                                 <div class="level">
                                                     <div class="level-left">
                                                         <p class="level-item">Venta</p>
@@ -594,7 +607,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="content">
                                         <button class="button has-background-grey-dark">Vender</button>
                                         <button class="button has-background-grey-light">Comprar</button>
@@ -602,42 +614,43 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+                <!--Final cards-->
 
-
-                <!--Final tarjetas-->
+                <!--Inicio de las cajas informaticas de la derecha-->
                 <div class="column is-3">
                     <div class="box">
                         <h1 class="subtitle has-background-info box has-text-info-light">Quiero vender
                             estos articulos</h1>
-                        <p class="has-background-primary box is-justified">¡Tu cesta esta vacía!
+                        <p class="has-background-primary box is-justified has-text-grey">¡Tu cesta esta vacía!
                         </p>
                     </div>
                     <div class="box">
                         <h1 class="subtitle has-background-info box has-text-info-light">Quiero comprar
                             estos articulos</h1>
-                        <p class="has-background-primary box is-justified">¡Tu cesta esta vacía!
+                        <p class="has-background-primary box is-justified has-text-grey">¡Tu cesta esta vacía!
                         </p>
                     </div>
                     <div class="box">
                         <h1 class="subtitle has-background-info box has-text-info-light">Últimos Blogs</h1>
-                        <p class="has-background-primary box is-justified">¡HAZ CHECK IN Y GANA 2.000€ EN PRODUCTOS!</p>
-                        <p class="has-background-primary box is-justified">¡Consigue dinero para Black Friday!</p>
-                        <p class="has-background-primary box is-justified">Vende con Confianza</p>
-                        <p class="has-background-primary box is-justified">Más Artículos De Blog </p>
-
+                        <p class="has-background-primary box is-justified has-text-grey">¡HAZ CHECK IN Y GANA 2.000€ EN
+                            PRODUCTOS!</p>
+                        <p class="has-background-primary box is-justified has-text-grey">¡Consigue dinero para Black
+                            Friday!</p>
+                        <p class="has-background-primary box is-justified has-text-grey">Vende con Confianza</p>
+                        <p class="has-background-primary box is-justified has-text-grey">Más Artículos De Blog </p>
                     </div>
                 </div>
+                <!--Fin de las cajas informativas de la derecha-->
             </div>
         </div>
     </section>
+    <!--Fin de la sección principal-->
 
+    <!--Inicio del footer-->
     <footer class="has-text-centered footer">
-        <!--Menú??-->
-
-
+        <!--Sección para los términos y condiciones-->
         <section class="section my-2">
             <div class="container ">
                 <div class="columns ">
@@ -664,6 +677,7 @@
         <!--Botones-->
         <section class="section my-3">
             <div class="container">
+                <!--Uso del level para la organización de los métodos de pago y las RRSS en sus iconos-->
                 <div class="level">
                     <div class="level-left">
                         <p class="level-item"><a href=""><img src="./imgs/visa.png" class="icon"></a></p>
@@ -686,8 +700,11 @@
             </div>
         </section>
 
-        <p>© Blablabla copyright blablabla - 2023 - Hecho por Nieves para el proyecto de diseño</p>
+        <p class="has-text-grey mb-2">© Blablabla copyright blablabla - 2023 - Hecho por Nieves para el proyecto de
+            Diseño de Interfaces Web</p>
+
     </footer>
+    <!--Fin del footer-->
 </body>
 
 </html>

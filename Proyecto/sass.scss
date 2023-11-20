@@ -1,42 +1,22 @@
 @charset "utf-8";
 
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-/*
-// Set your brand colors
+$fullhd-enabled: false; //Eliminar el full-hd
 
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
-// Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-
-$widescreen-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;*/
-$fullhd-enabled: false;
-
+//Creación de clases para varios colores
 $purple: #f5a2b0c4;
 $pink: #e77b8df6;
 $darkPink:#973f4df6;
 $brown: #e24962be;
 $beige-light: #e78595be;
 
+//Aplicación de dichas clases en los colores ya existentes en clases de bulma
 $grey-dark: $brown;
 $grey-light: $beige-light;
-
-
 $link: $darkPink;
 $primary: $purple;
 $info: $pink;
-// Import only what you need from Bulma
+
+// Imports de bulma
 @import "./bulma-0.9.4/bulma/sass/utilities/_all.sass";
 @import "./bulma-0.9.4/bulma/sass/base/_all.sass";
 @import "./bulma-0.9.4/bulma/sass/elements/_all.sass";
@@ -45,3 +25,7 @@ $info: $pink;
 @import "./bulma-0.9.4/bulma/sass/grid/_all.sass";
 @import "./bulma-0.9.4/bulma/sass/helpers/_all.sass";
 
+//Fuente de todo el documento
+body {
+    font-family: 'IM Fell DW Pica', serif;
+}

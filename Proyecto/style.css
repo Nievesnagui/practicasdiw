@@ -1,24 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
-/*
-// Set your brand colors
-
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
-// Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-
-$widescreen-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;*/
 /* Bulma Utilities */
 .pagination-previous,
 .pagination-next,
@@ -9154,4 +9134,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   .is-invisible-widescreen {
     visibility: hidden !important;
   }
+}
+body {
+  font-family: "IM Fell DW Pica", serif;
 }
